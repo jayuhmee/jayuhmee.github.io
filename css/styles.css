@@ -1,0 +1,150 @@
+body {
+	text-align: left;
+	background-image:url(../img/pattern.png);
+	background-repeat:repeat;
+}
+
+#full {
+width: 90%;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+h2 {
+	color: #333;
+	line-height: normal;
+}
+
+
+#top {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#nav {
+	height: auto;
+	width: 200px;
+	float: left;
+	margin-right: 30px;
+}
+
+.logo_bg {
+	background-image:url(../img/logo_white.png);
+	width: 80px;
+	height: 123px;
+	background-repeat:no-repeat;
+	min-width: 85px;
+	margin-top: 30px;
+	margin-left: 5%;
+	float: left;
+}
+
+#buttons {
+		width: 100px;
+		margin-top: 35px;
+		margin-right: 0%;
+		float: right;
+
+}
+
+
+#me {
+	width: 190px;
+	border: 2px solid #000;
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+  	margin-left: 8%;
+	margin-top: 5px;
+}
+
+
+.text {
+	width: 75%;
+	margin-top: 30px;
+	float: left;
+}
+
+.about {
+	width: 70%;
+
+}
+
+
+#me:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+
+.my_button {
+	height: 22px;
+	width: 100%;
+	color: #000;
+	text-align: center;
+	font-size:10px;
+	border: 2px solid #000;
+	margin-bottom: 2px;
+	line-height: 22px;
+}
+
+
+.my_button:hover {
+	width: 100%;
+	line-height: 22px;
+	height: 22px;
+	color: #fff;
+	background: #000;
+	text-align: center;
+	font-size:10px;
+	margin-bottom: 2px;
+
+}
+
+#gallery {
+	width: 100%;
+	height: auto;
+	padding-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	float: left;
+	margin-bottom: 140px;
+}
+
+.h2link {
+	color: #888;
+}
+
+.h2link:hover {
+	color: #666;
+}
+
+
+img.thumb {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+  width: 17%;
+  margin: 1%;
+  margin-bottom: 4px;
+  min-width: 200px;
+}
+
+img.thumb:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+    width: 17%;
+  margin: 1%;
+  margin-bottom: 4px;
+  min-width: 200px;
+}
+
+.sub {
+	font-size: 25px;
+	line-height: 38px;
+	font-weight: bold;
+	color: #333;
+}
