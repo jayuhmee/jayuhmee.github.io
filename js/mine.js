@@ -1,16 +1,13 @@
-jQuery('.logo_bg').mouseover(function()
-{
-jQuery('.logo_bg').css("background-image", "url(img/logo_black.png)");
-}).mouseleave(function(){
-jQuery('.logo_bg').css("background-image", "url(img/logo_white.png)"); 
-});
-
-
-
-
-jQuery('img.thumb').mouseover(function()
-{
-jQuery(this).css({opacity:1.0});
-}).mouseleave(function(){
-jQuery(this).css({opacity:0.75}); 
+$(document).ready(function () {		
+	$.jribbble.getShotsByPlayerId('jaimesparr', function (playerShots) {
+	    var html = [];
+	
+	    $.each(playerShots.shots, function (i, shot) {
+	        html.push('<li><a href="' + shot.url + '">');
+	        html.push('<img src="' + shot.image_teaser_url + '" ');
+	        html.push('alt="' + shot.title + '"></a></li>');
+	    });
+	
+	    $('#portfolio').html(html.join(''));
+	}, {page: 1, per_page: 12});
 });
