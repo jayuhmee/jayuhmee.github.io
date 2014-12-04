@@ -7,8 +7,9 @@ html, body
 .me {
 	height: 250px;
 	float: left;
-	margin: 50px;
 	margin-top: 0px;
+	margin-right: 40px;
+	margin-bottom: 40px;
 }
 
 #about {
@@ -17,14 +18,12 @@ html, body
 	min-height: 320px;
 	margin-right: auto;
 	margin-left: auto;
-	align-content: center;
 }
 
 #about p {
 	font-family: raleway, sans-serif;
 	font-weight: bolder;
 	color: #333;
-	margin: 10px;
 	font-size: 14pt;
 	line-height: 30px;
 }
@@ -39,7 +38,7 @@ html, body
 	margin-left: auto;
 	margin-right: auto;
 	border-bottom: 1px solid #888;
-	margin-top: 40px;
+	margin-top: -40px;
 }
 
 #header a {
@@ -75,9 +74,9 @@ html, body
 
 .logo {
 	width: 60px;
-	margin-top: -200px;
+	margin-top: 80px;
 	margin-left: 40%;
-	margin-bottom: 20px;
+	margin-bottom: -40px;
 }
 
 .thumb:hover {
