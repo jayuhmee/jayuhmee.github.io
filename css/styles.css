@@ -9,7 +9,6 @@ html, body
 	float: left;
 	margin-top: 0px;
 	margin-right: 40px;
-	margin-left: 40px;
 	margin-bottom: 40px;
 }
 
@@ -104,6 +103,7 @@ html, body
 #mobile-header {
 	width: 80%;
 	margin-left: auto;
+	margin-right: auto;
 	height: auto;
 	margin-top: 30px;
 	text-align: justify;
@@ -117,9 +117,9 @@ html, body
 .mobile-nav {
 	width: 80%;
 	height: auto;
-	text-align: right;
+	margin-left: auto;
+	margin-right: auto;
 	padding-top: 30px;
-	margin-top: 5px;
 	padding-bottom: 20px;
 	border-bottom: 1px solid #333;
 }
