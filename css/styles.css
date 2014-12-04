@@ -99,6 +99,10 @@ html, body
 	margin-bottom: -40px;
 }
 
+.logo:hover {
+	opacity:1.0;
+}
+
 .thumb:hover {
 	opacity: .5;
 }
