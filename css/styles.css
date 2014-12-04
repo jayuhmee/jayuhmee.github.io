@@ -24,8 +24,9 @@ html, body
 	font-family: raleway, sans-serif;
 	font-weight: bolder;
 	color: #333;
-	font-size: 14pt;
+	font-size: 13pt;
 	line-height: 40px;
+	word-spacing: 1px;
 }
 
 #about h3 {
@@ -100,11 +101,10 @@ html, body
 }
 
 .logo:hover {
-	opacity:1.0;
+	opacity: 1.0!important;
 }
 
 .thumb:hover {
-	opacity: .5;
 }
 
 #portfolio {
