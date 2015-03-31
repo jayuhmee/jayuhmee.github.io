@@ -8,13 +8,14 @@
 	<meta name="author" content="">
 		
 <!-- Load Stylesheets -->
-	
 	<link rel="stylesheet" href="css/styles.css" />
-	<link rel="stylesheet" href="css/grid.css" />
+	<link rel="stylesheet" href="css/gooey.css" />
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
 	<link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" />
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+
 
 <!-- Favicon -->
 	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
@@ -24,49 +25,78 @@
 </head>
 
 <div id="header">
-	<img id="logo" src="img/logo.png">
-	<p><a href="index.html" class="active">work</a> <a href="about.html">about</a></p>
-	<div id="social">
-		<a href="https://dribbble.com/jaimesparr"><i class="fa fa-dribbble"></i></a>
-		<a href="https://www.linkedin.com/in/jmelavie/"><i class="fa fa-linkedin"></i></a>
-		<a href="https://twitter.com/JmeLaVie"><i class="fa fa-twitter"></i></a>
-		<a href="mailto:j.me.sparr@gmail.com" onclick="window.open('https://mail.google.com/mail/?view=cm&amp;tf=1&amp;to=j.me.sparr@gmail.com&amp;cc=&amp;bcc=&amp;su=&amp;body=','_blank');return false;"><i class="fa fa-envelope"></i></a>
+<img src="img/logo.png" class="logo">
+</div>
+
+
+<!--start portfolio -->
+<ul class="grid swipe-down" id="grid">
+	<li><a href="img/portfolio/open-source.png" rel="lightbox-gallery"><img src="img/portfolio/open-source.png" class="thumb" alt="dummy"></a></li>
+	<li><a href="img/portfolio/mirage.png" rel="lightbox-gallery"><img src="img/portfolio/mirage.png" class="thumb" alt="dummy"></a></li>
+	<li><a href="img/portfolio/support.png" rel="lightbox-gallery"><img src="img/portfolio/support.png" class="thumb" alt="dummy"></a></li>
+	<li><a href="img/portfolio/save-the-web.png" rel="lightbox-gallery"><img src="img/portfolio/save-the-web.png" class="thumb" alt="dummy"></a></li>
+	<li><a href="img/portfolio/features.png" rel="lightbox-gallery"><img src="img/portfolio/features.png" class="thumb" alt="dummy"></a></li>
+	<li><a href="img/portfolio/galileo.png" rel="lightbox-gallery"><img src="img/portfolio/galileo.png" class="thumb" alt="dummy"></a></li>
+	<li><a href="img/portfolio/lhr.png" rel="lightbox-gallery"><img src="img/portfolio/lhr.png" class="thumb" alt="dummy"></a></li>
+	<li><a href="img/portfolio/san-francisco.png" rel="lightbox-gallery"><img src="img/portfolio/san-francisco.png" class="thumb" alt="dummy"></a></li>
+	<li><a href="img/portfolio/sre.png" rel="lightbox-gallery"><img src="img/portfolio/sre.png" class="thumb" alt="dummy"></a></li>
+	<li><a href="img/portfolio/bug.png" rel="lightbox-gallery"><img src="img/portfolio/bug.png" class="thumb" alt="dummy"></a></li>
+	<li><a href="img/portfolio/kryptnostic.png" rel="lightbox-gallery"><img src="img/portfolio/kryptnostic.png" class="thumb" alt="dummy"></a></li>
+	<li><a href="img/portfolio/care.png" rel="lightbox-gallery"><img src="img/portfolio/care.png" class="thumb" alt="dummy"></a></li>
+	<li><a href="img/portfolio/nola.png" rel="lightbox-gallery"><img src="img/portfolio/nola.png" class="thumb" alt="dummy"></a></li>
+
+
+</ul>
+
+
+<hr>
+<div id="footer">
+	<div class="share">
+		<button class="share-toggle-button">
+			<i class="share-icon fa fa-heart"></i>
+		</button>
+			<ul class="share-items">
+				<li class="share-item">
+					<a href="https://dribbble.com/jaimesparr" class="share-button">
+						<i class="share-icon fa fa-dribbble"></i>
+					</a>
+				</li>
+				<li class="share-item">
+					<a href="https://twitter.com/JmeLaVie" class="share-button">
+					<i class="share-icon fa fa-twitter"></i>
+					</a>
+				</li>
+				<li class="share-item">
+					<a href="https://www.linkedin.com/in/jmelavie" class="share-button">
+					<i class="share-icon fa fa-linkedin"></i>
+					</a>
+				</li>
+				<li class="share-item">
+					<a href="mailto:j.me.sparr@gmail.com" onclick="window.open('https://mail.google.com/mail/?view=cm&amp;tf=1&amp;to=j.me.sparr@gmail.com&amp;cc=&amp;bcc=&amp;su=&amp;body=','_blank');return false;" class="share-button">
+					<i class="share-icon fa fa-envelope"></i>
+					</a>
+				</li>
+			</ul>
 	</div>
 </div>
 
-<div id="mobile-header">
-	<img src="img/logo.png" id="logo-mobile"><p><a class="active" href="index.html">work</a> <a href="about.html">about</a></p>
-</div>
 
-<div id="portfolio">
-
-<section id="photos">
-<a href="img/portfolio/galileo.png" rel="lightbox-gallery"><img src="img/portfolio/galileo.png" class="thumb"></a>
-<a href="img/portfolio/sre.png" rel="lightbox-gallery"><img src="img/portfolio/sre.png"  class="thumb"></a>
-<a href="img/portfolio/bug.png" rel="lightbox-gallery"><img src="img/portfolio/bug.png"  class="thumb"></a> 
-<a href="img/portfolio/kryptnostic.png" rel="lightbox-gallery"><img src="img/portfolio/kryptnostic.png"  class="thumb"></a>
-<a href="img/portfolio/open-source.png" rel="lightbox-gallery"><img src="img/portfolio/open-source.png"  class="thumb"></a>
-<a href="img/portfolio/support.png" rel="lightbox-gallery"><img src="img/portfolio/support.png" class="thumb"></a>
-<a href="img/portfolio/mirage.png" rel="lightbox-gallery"><img src="img/portfolio/mirage.png"  class="thumb"></a>
-<a href="img/portfolio/circles.png" rel="lightbox-gallery"><img src="img/portfolio/circles.png" class="thumb"></a>
-<a href="img/portfolio/lhr.png" rel="lightbox-gallery"><img src="img/portfolio/lhr.png"  class="thumb"></a> 
-<a href="img/portfolio/save-the-web.png" rel="lightbox-gallery"><img src="img/portfolio/save-the-web.png"  class="thumb"></a>	
-<a href="img/portfolio/nola.png" rel="lightbox-gallery"><img src="img/portfolio/nola.png"  class="thumb"></a>
-<a href="img/portfolio/care.png" rel="lightbox-gallery"><img src="img/portfolio/care.png"  class="thumb"></a>
-
-</section>
-</div>
-
-
-<div id="useless-footer"></div>
-<div id="mobile-nav">
-<a href="https://dribbble.com/jaimesparr"><img src="img/link-images/dribbble.png"></a>
-		<a href="https://www.linkedin.com/in/jmelavie/"><img src="img/link-images/linkedin.png"></a>
-		<a href="https://twitter.com/JmeLaVie"><img src="img/link-images/twitter.png"></a>
-		<a href="mailto:j.me.sparr@gmail.com" onclick="window.open('https://mail.google.com/mail/?view=cm&amp;tf=1&amp;to=j.me.sparr@gmail.com&amp;cc=&amp;bcc=&amp;su=&amp;body=','_blank');return false;"><img src="img/link-images/mail.png"></a>
-</div>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/slimbox2.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/gooey.js"></script>
+<script src="js/colorfinder-1.1.js"></script>
+<script src="js/gridScrollFx.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/share.js"></script>
+<script>
+	new GridScrollFx( document.getElementById( 'grid' ), {
+		viewportFactor : 0.4
+	} );
+</script>
 </body>
 </html>
