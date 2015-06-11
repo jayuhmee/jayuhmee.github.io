@@ -19,9 +19,8 @@
   line-height: 70px;
   margin-left: -40px;
   margin-top: -40px;
-  background: white;
   text-align: center;
-  color: red;
+  color: white;
   border: none;
   outline: none;
 }
@@ -31,20 +30,20 @@
 }
 
 .share-toggle-button:hover {
-  color: red;
-  background-color: white;
+  color: white;
+  background-color: #666;
 }
 
 .share-button {
   font-size: 25px;
-  background: #D65A54;
+  background: #909c38;
   -webkit-transform: scale(0.95, 0.95);
   transform: scale(0.95, 0.95);
   color: #fff;
 }
 
 .share-button:hover {
-  background-color: #b3312b;
+  background-color: #646d27;
 }
 
 a.share-button {
@@ -53,7 +52,7 @@ a.share-button {
 
 .share-toggle-button {
   z-index: 9;
-  background: white;
+  background: #414141;
   font-size: 20px;
 }
 
