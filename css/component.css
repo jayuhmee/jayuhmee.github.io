@@ -42,8 +42,8 @@
 .grid li > a {
 	position: relative;
 	overflow: hidden;
-	margin: 7px;
-}
+ 	margin: 15px;
+ }
 
 /* Curtain element */
 .grid .curtain {

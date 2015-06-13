@@ -4,10 +4,11 @@ html, body
     padding: 0;
 }
 
+/* Logo Tab */
 .logo-tab {
     height: 50px;
     width: 60px;
-    position: absolute;
+    position: fixed;
     top: 0px; 
    	left: 20px;
     padding-top:15px;
@@ -20,7 +21,6 @@ html, body
 		-ms-transition: all .2s ease-in-out;
 		transition: all .2s ease-in-out;
 }
-
 .logo-tab:after {
   content: "";
   position: absolute;
@@ -31,53 +31,58 @@ html, body
   border-bottom: 15px solid #fff;
   border-left: 70px solid transparent;
 }
-
-
 .logo-tab img {
 	width: 40px;
 }
-
 .logo-tab:hover {
     background-color: #666;
 }
-
-/*body*/
-.body {
+/* Logo Tab */
+/* Body */
+.about {
+	width: 20%;
+}
+.portfolio {
 	width: 80%;
- 	height: auto;
+ 	height: 100%;
  	margin-left: auto;
  	margin-right: auto;
+ 	overflow: scroll;
 }
-
-/*footer*/
-.footer {
-	width: 100%;
-	height: 200px;
-	text-align: center;
-	padding-top: 60px;
+.thumb {
+  -ms-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  }
+.grid li > a:hover .thumb {
+  -ms-transform: scale(1.06);
+  -moz-transform: scale(1.06);
+  -webkt-transform: scale(1.06);
+  transform: scale(1.06);
 }
-/*end footer*/
-
-/*repeated styles*/
+*/
 h1, h2 {
 	font-family: 'Crete Round', serif;
 	font-size: 30pt;
 	color: #414141;
 	letter-spacing: 1pt;
 }
-
 p {
 	font-family: "brandon-grotesque",sans-serif;
 	font-size: 14pt;
 	color: #414141;
 }
-
 hr {
 	width: 80%;
 	border: 1px solid #eee;
 }
-
-
-
-
-
+/* Body */
+/* Footer */
+.footer {
+	width: 100%;
+	height: 200px;
+	text-align: center;
+	padding-top: 60px;
+}
+/* End Footer */
