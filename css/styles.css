@@ -6,20 +6,20 @@ html, body
 
 /* Logo Tab */
 .logo-tab {
-    height: 50px;
-    width: 60px;
-    position: fixed;
-    top: 0px; 
-   	left: 20px;
-    padding-top:15px;
-	text-align: center;
-    background: #414141;
-   	z-index: 2;
-		-webkit-transition: all .2s ease-in-out;
-		-moz-transition: all .2s ease-in-out;
-		-o-transition: all .2s ease-in-out;
-		-ms-transition: all .2s ease-in-out;
-		transition: all .2s ease-in-out;
+  height: 50px;
+  width: 60px;
+  position: absolute;
+  top: 0px; 
+  left: 20px;
+  padding-top:15px;
+  text-align: center;
+  background: #414141;
+  z-index: 2;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 .logo-tab:after {
   content: "";
