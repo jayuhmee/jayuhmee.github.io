@@ -292,6 +292,7 @@ p {
 
   .mobile-header {
     width: 100%;
+    min-width: 400px;
     height: 100px;
     background-color: #F74E28;
     text-align: center;
