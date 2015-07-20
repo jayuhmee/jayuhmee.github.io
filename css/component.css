@@ -1,10 +1,15 @@
+.grid-wrap {
+	clear: both;
+	margin: 0 auto;
+	padding: 0;
+	max-width: 1260px;
+}
+
 .grid {
-	margin: 15px auto;
+	margin: 5px auto;
 	padding: 0;
 	list-style: none;
-	min-height: 300px;
-	width: 1200px;
-	margin-top: 0px;
+	min-height: 500px;
 }
 
 .js .grid {
@@ -18,7 +23,8 @@
 .grid li {
 	display: inline-block;
 	overflow: hidden;
-	width: 400px;
+	width: 350px;
+	margin: 5px;
 	text-align: left;
 	vertical-align: top;
 }
@@ -38,13 +44,14 @@
 	display: block;
 	outline: none;
 	border: none;
+	width: 100%;
 }
 
 .grid li > a {
 	position: relative;
 	overflow: hidden;
- 	margin: 15px;
- }
+	margin: 5px;
+}
 
 /* Curtain element */
 .grid .curtain {
@@ -60,8 +67,8 @@
 .grid.swipe-down .curtain {
 	-webkit-transform: translate3d(0,-100%,0);
 	transform: translate3d(0,-100%,0);
+	background: #00d8ff;
 }
-
 
 /* Shadow */
 .grid .curtain::after {
@@ -74,11 +81,14 @@
 	content: '';
 }
 
+.grid.swipe-right .curtain::after,
+.grid.swipe-rotate .curtain::after {
+	left: -100%;
+}
+
 .grid.swipe-down .curtain::after {
 	top: -100%;
 }
-
-
 
 /* Pseudo element for hover effect */
 .grid li > a::before {
@@ -94,7 +104,7 @@
 	transition: border-width 0.2s, border-color 0.2s;
 }
 
-
+/* Animations */
 /* Swipe down */
 .grid.swipe-down li.animate .curtain {
 	-webkit-animation: swipeDown 1.5s cubic-bezier(0.6,0,0.4,1) forwards;
@@ -115,7 +125,12 @@
 
 
 /* Shadow */
-
+.grid li.animate .curtain::after {
+	-webkit-animation: fadeOut 1.5s ease forwards;
+	animation: fadeOut 1.5s ease forwards;
+	-webkit-animation-delay: inherit;
+	animation-delay: inherit;
+}
 
 @-webkit-keyframes fadeOut {
 	0% {} /* fixes Chrome 35.0.1916.114 issue (easing breaks) */
@@ -132,7 +147,6 @@
 /* Hide image and title and show at half time */
 .js .grid li img {
 	visibility: hidden;
-	width: 100%;
 }
 
 .grid li.animate img {

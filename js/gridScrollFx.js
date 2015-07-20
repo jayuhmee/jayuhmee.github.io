@@ -1,14 +1,4 @@
-/**
- * gridScrollFx.js v1.0.0
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2013, Codrops
- * http://www.codrops.com
- */
-;( function( window ) {
+( function( window ) {
 	
 	'use strict';
 	
@@ -89,14 +79,15 @@
 		if( !this.image ) return;
 		this.curtain = document.createElement( 'div' );
 		this.curtain.className = 'curtain';
-		var rgb = new ColorFinder( function favorHue(r,g,b) {
-			// exclude white
-			//if (r>245 && g>245 && b>245) return 0;
-			return (Math.abs(r-g)*Math.abs(r-g) + Math.abs(r-b)*Math.abs(r-b) + Math.abs(g-b)*Math.abs(g-b))/65535*50+1;
-		} ).getMostProminentColor( this.image );
-		if( rgb.r && rgb.g && rgb.b ) {
-			this.curtain.style.background = 'rgb('+rgb.r+','+rgb.g+','+rgb.b+')';
-		}
+		// var rgb = new ColorFinder( function favorHue(r,g,b) {
+		// 	// exclude white
+		// 	//if (r>245 && g>245 && b>245) return 0;
+		// 	return (Math.abs(r-g)*Math.abs(r-g) + Math.abs(r-b)*Math.abs(r-b) + Math.abs(g-b)*Math.abs(g-b))/65535*50+1;
+		// } ).getMostProminentColor( this.image );
+		// if( rgb.r && rgb.g && rgb.b ) {
+			// this.curtain.style.background = 'rgb('+rgb.r+','+rgb.g+','+rgb.b+')';
+		this.curtain.style.background = 'rgb(0, 216, 255)';
+		// }
 		this.anchor.appendChild( this.curtain );
 	}
 
@@ -229,7 +220,7 @@
 		if ( this.resizeTimeout ) {
 			clearTimeout( this.resizeTimeout );
 		}
-		this.resizeTimeout = setTimeout( delayed, 1000 );
+		this.resizeTimeout = setTimeout( delayed, 0 );
 	}
 
 	// add to global namespace
