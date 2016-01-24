@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Jaime Sparr | Design</title>
+  <meta name="description" content="Jaime Sparr. Designer, wanna-be comic artist, punk rock enthusiast, and ardent admirer of the eclectic and colorful.">
+  <meta name="author" content="Jaime Sparr">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image" href="favicon.ico">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<div class="container">
+  <div class="row">
+    <div class="two columns" style="text-align: left;">
+      <div class="logo">
+        <a href="index.html"><img src="img/logo.png"></a>
+      </div>
+    </div>
+    <div class="ten columns">
+      <div class="nav">
+        <a href="index.html">work</a>   <a href="about.html">about</a>   <a href="/cdn-cgi/l/email-protection#d7bdf9bab2f9a4a7b6a5a597b0bab6bebbf9b4b8ba" onclick="window.open('https://mail.google.com/mail/?view=cm&amp;tf=1&amp;to=hello@jaime.design&amp;cc=&amp;bcc=&amp;su=&amp;body=','_blank');return false;">contact</a>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 100px;">
+        <h1>Page Rules</h1>
+        <p>Page Rules provide you with fine-grained control of CloudFlare on each page of your site. Users can enter a URL pattern and then customize CloudFlare settings only for that pattern.<br /><a href="https://invis.io/735PWZKCK">See the Invision prototype of this project.</a></p>
+      </div>
+    </div>
+     <hr>
+    <div class="row">
+      <div class="twelve columns" style="margin: 4% 0% 2% 0%;">
+        <h2>Old version</h2>
+        <p></p>
+      </div>
+      <div class="twelve columns">
+      <img src="img/page-rules/old-page-rules.png" class="thumb">
+      </div>
+      <div class="twelve columns">
+        <p>The old version of the Page Rules UI required users to enter a URL pattern and then select a setting for every possible feature setting. This was not only confusing, but forced users to make settings that they may not want to make. It also did not offer a way for users to see whether no setting was set for a particular feature.</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="twelve columns" style="margin: 4% 0% 2% 0%;">
+        <h2>Process</h2>
+        <p>We knew that we were going to keep much of the same functionality for Page Rules in the new UI. But we wanted to improve the usability of the app. I knew we needed to solve the problem in the old UI that forced users to provide a setting for every feature.</p>
+        <p>In addition, since we had redesigned our product dashboard, we now offered more CloudFlare features than we had when Page Rules was originally created. For example, CloudFlare now provides Multi-User functionality. For Page Rules, this means many different users could be contributing Page Rules to one website. I wanted to provide a way for users to share notes on Page Rules to help explain why they had created a specific rule.</p>
+        <p>Lastly, it was important to stop using an iframed version of an old UI in our new product dashboard. I wanted to redesign the application in our new visual style for consistency with the rest of the site. Because CloudFlare is a security and performance company, consistency is important to our design integrity and it helps establish trust with users.</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="twelve columns" style="margin: 4% 0% 2% 0%;">
+        <h2>Problem solving: Feature Selections</h2>
+        <p>Rather than putting every feature in front of the user in a long-form format, I chose to design a cleaner UI that allows users to add one feature setting at a time. Users can either type to begin searching for the feature of their choice, or simply click to open our dropdown list to scroll through the different features available. The features are divided into categories, which reflect the same categories users navigate through in the primary dashboard UI.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="six columns">
+        <img src="img/page-rules/search-empty.png" class="thumb border">
+      </div>
+      <div class="six columns">
+        <img src="img/page-rules/search-full.png" class="thumb border">
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="twelve columns" style="margin: 4% 0% 2% 0%;">
+        <h2>Problem solving: Multiuser</h2>
+        <p>To help users share information about different Page Rules, I included a Description option for all Page Rules. This feature is completely optional, and allows users to add brief notes about what a Page Rule does. The description is instantly visisble in the Page Rules table for easy skimming.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="six columns">
+        <img src="img/page-rules/modal-description.png" class="thumb border">
+      </div>
+      <div class="six columns">
+        <img src="img/page-rules/app-description.png" class="thumb border">
+      </div>
+    </div>
+  <hr>
+  <div class="row">
+      <div class="twelve columns" style="margin: 4% 0% 2% 0%;">
+        <h2>Problem solving: Staging Mode</h2>
+        <p>Another feature that we wanted to implement as a result of multi-user was staging mode. Because multiple members of a team may be accessing the same site, it's important to provide users the ability to draft up a page rule, save it, and send it off for review to another team member before activating the Page Rule.</p>
+        <p>To accommodate for this, I designed a simple selection in the UI that allows users to save Page Rules as drafts. Upon saving, the Page Rule is added to the table, but is set in the 'off' position to prevent it from executing. When a user is ready to activate the Page Rule, they simply switch it from off to on.</p>
+        <p>In addition, whenever a new Page Rule is added to a site, when it appears in the table the row glows green for a few seconds, then appears normal. This helps users to locate the Page Rule they have just added, especially in cases where users may have up to 100 rows of Page Rules in their table.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="six columns">
+        <img src="img/page-rules/modal-draft.png" class="thumb border">
+      </div>
+      <div class="six columns">
+        <img src="img/page-rules/app-draft.png" class="thumb border">
+      </div>
+    </div>
+  <hr>
+  <div class="row">
+    <div class="twelve columns" style="margin: 4% 0% 2% 0%;">
+      <h2>Full Design</h2>
+      <p>The finished design involves a simple table display that showcases Page Rules a user has created, in a ranked order of which Page Rule is most important and should take priority in execution. Page Rules can be dragged and dropped, or the rank can be clicked to edit right in the table. Users can continue to manage or delete Page Rules from the application. Once a user has used all of the available Page Rules for their plan level, they are encourage to upgrade their CloudFlare account to obtain more Page Rule slots.</p>
+      <p>For a more comphrensive and interactive look at this design, please <a href="https://invis.io/735PWZKCK">see the Invision prototype of this project.</a></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="twelve columns">
+      <img src="img/page-rules/page-rules-final.png" class="thumb border">
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="twelve columns" style="margin: 5% 0% 2% 0%;">
+      <div class="second-nav">
+        <a class="button button-primary" href="index.html"><i class="share-icon fa fa-arrow-left"></i>    Back to portfolio</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="footer">
+    <div class="footer-left">
+      <span class="strikeout">PACIFIC NORTHWEST</span><p><i class="fa fa-map-marker"> </i>BAY AREA</p>
+    </div>
+    <div class="footer-middle">
+      <a href="https://dribbble.com/jaimesparr"><i class="share-icon fa fa-dribbble"></i></a>
+      <a href="https://twitter.com/jayuhmee"><i class="share-icon fa fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/jaimesparr"><i class="share-icon fa fa-linkedin"></i></a>
+      <a href="/cdn-cgi/l/email-protection#d7bdf9bab2f9a4a7b6a5a597b0bab6bebbf9b4b8ba" onclick="window.open('https://mail.google.com/mail/?view=cm&amp;tf=1&amp;to=j.me.sparr@gmail.com&amp;cc=&amp;bcc=&amp;su=&amp;body=','_blank');return false;"><i class="share-icon fa fa-comment"></i></a>
+    </div>
+    <div class="footer-right">
+      <p>Built with <a href="http://www.sublimetext.com">Sublime Text</a></p>
+      <p>Powered by <a href="https://pages.github.com">GitHub</a></p> 
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
