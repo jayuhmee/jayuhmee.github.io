@@ -50,6 +50,19 @@
   display: none;
 }
 
+.process {
+  text-align: center;
+}
+
+.process p {
+  margin-bottom: 5px;
+}
+
+.process h3 {
+  font-weight: bolder;
+  line-height: 20px;
+}
+
 .portfolio {
   position: relative;
   background-color: #00d8ff;
@@ -98,7 +111,7 @@
 
 
 .border {
-  border: 1px solid #ebebeb;
+  border: 2px solid #ebebeb;
 }
 
 .back, .forward {
