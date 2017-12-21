@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Jaime Sparr | Cloudflare Scan</title>
+  <meta name="description" content="Jaime Sparr. Designer, wanna-be comic artist, punk rock enthusiast, and ardent admirer of the eclectic and colorful.">
+  <meta name="author" content="Jaime Sparr">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+  <script src="https://use.fontawesome.com/5136444e65.js"></script>
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/simple-grid.css">
+
+   <link rel="icon" type="image" href="favicon.ico">
+
+</head>
+<body>
+
+<div class="hero">
+	<div class="container">
+		<div class="row" style="padding-top: 20px; height: 150px;">
+			<div class="col-12">
+				<p class="accent"><a href="index.html" class="white"><i class="share-icon fa fa-arrow-left"></i>&nbsp;&nbsp;Back</a></p>
+			</div>
+		</div>
+		<div class="row" style="height: 180px;">
+			<div class="col-12">
+				<p class="accent white">Cloudflare</p>
+				<h1 class="white">Cloudflare Scan</h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container animate-bottom" style="margin-top: 60px;">
+	<div class="row">
+		<div class="col-3"></div>
+		<div class="col-9">
+		<h2>What is Cloudflare Scan?</h2>
+		<p>CloudFlare Scan is a service app that alerts CloudFlare customers to dozens of different web infections—including malware and phishing attempts—on their website. Scan leverages Stop The Hacker's security technology. Cloudflare had acquired Stop The Hacker and wanted to integrate their product with the core Cloudflare experience. We also wanted to use Google and Facebook scan functionality to provide customers with additional oversight for their domain.</p>
+		</div>
+	</div>
+
+
+	<div class="row" style="margin-top: 40px; margin-bottom: 40px;">
+		<div class="col-8">
+			<img src="img/scan/scan-icons.png" class="wide">
+		</div>
+		<div class="col-4">
+			<img src="img/scan/scan-icon-final.png" class="wide">
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-3" style="margin-top: 20px;">
+			<p class="accent"><i class="fa fa-arrow-up" aria-hidden="true"></i>&nbsp;&nbsp;Scan Icon Designs</p>
+		</div>
+		<div class="col-9">
+		<h2>The Challenge</h2>
+		<p>Almost 100% of the time a CloudFlare customer site will be free of Malware. A primary objective for Scan was to help customers understand how recently their domain had been scanned for malware, so that they can be confident in their site security.</p>
+
+		<p>We also wanted to highlight to customers that if their site requires additional security, they can upgrade their Cloudflare plan to receive more frequent Scans, as well as Cloudflare’s Advanced Scan. Advance Scan improves your security by utilizing a CloudFlare crawler that will search every URL on your website and check it against our sources to see if the link is blacklisted anywhere else.</p>
+
+		<p>Because Cloudflare also leverages Google and Facebook scans, we wanted to be transparent about which service had detected a threat. We also wanted to provide users with the exact URL location of where the threat was detected, to help them remove it.</p>
+
+		<p>Lastly, because Scan consumes bandwidth, we wanted to provide users with the option to turn scan on and off.</p>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-3"></div>
+		<div class="col-9">
+			<h2>Requirements</h2>
+			<div class="col-6">
+				<p>
+				<i class="fa fa-check" aria-hidden="true" style="color:#4DC2DC"></i>&nbsp;&nbsp;Turn Scan on & off</br>
+				<i class="fa fa-check" aria-hidden="true" style="color:#4DC2DC"></i>&nbsp;&nbsp;Show exact URL of threat found</br>
+				<i class="fa fa-check" aria-hidden="true" style="color:#4DC2DC"></i>&nbsp;&nbsp;Display service that detected threat</br>
+				</p>
+			</div>
+			<div class="col-6" style="margin-bottom: 40px;">
+				<p>
+				<i class="fa fa-check" aria-hidden="true" style="color:#4DC2DC"></i>&nbsp;&nbsp;Provide instruction to remove threat </br>
+				<i class="fa fa-check" aria-hidden="true" style="color:#4DC2DC"></i>&nbsp;&nbsp;Upsell customers to Pro Plan</br>
+				<i class="fa fa-check" aria-hidden="true" style="color:#4DC2DC"></i>&nbsp;&nbsp;Welcoming empty state for new users</br>
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-12">
+			<img src="img/scan/scan-wires.png" class="wide">
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-3"></div>
+		<div class="col-9" style="margin-top: 40px;">
+		<h2>Process</h2>
+			<p>This release of the Scan App was Cloudflare's initial release, and thus an MVP project. We determined basic requirements internally, focusing on providing users with basic tools to detect and elimate threats to their site.</p>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-12">
+			<img src="img/scan/scan.png" class="wide" style="margin-top: 40px; margin-bottom: 40px;">
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-3"></div>
+		<div class="col-9"">
+			<h2>The Solution</h2>
+			<p>We kept Scan very simple - 99% of the time users will see that no threats have been detected on their site. We chose to highlight the security status first thing in the Scan app, and used simple color coding to communicate this at just a glance.</p>
+
+			<p>One of the really great things about Cloudflare was that our design team had established a comprehensive and consistent design system for our product dashboard. This meant that designing Scan was a snap. We leveraged the existing Cloudflare table design, and displayed the most important information upfront to our users, specifically: The URL of your domain where a threat was found, what type of threat was found, and when. Because URLs could potentially be extremely long, and because we also wanted to provide users with a clear CTA unique to each threat, we tucked the full, unfurled URL, as well as knowledge base articles on how to solve the threat inside of a modal, behind a "Review" CTA.</p>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-3"></div>
+		<div class="col-9">
+			<p class="accent"><a href="index.html"><i class="share-icon fa fa-arrow-left"></i>&nbsp;&nbsp;Back to portfolio</a></p>
+		</div>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="row">
+    	<div class="col-4 center">
+     		<span class="strikeout">PACIFIC NORTHWEST</span><p><i class="fa fa-map-marker"> </i>BAY AREA</p>
+    	</div>
+
+    	<div class="col-4 center">
+      		<a href="https://dribbble.com/jaimesparr"><i class="share-icon fa fa-dribbble"></i></a>
+      		<a href="https://twitter.com/jayuhmee"><i class="share-icon fa fa-twitter"></i></a>
+      		<a href="https://www.linkedin.com/in/jaimesparr"><i class="share-icon fa fa-linkedin"></i></a>
+      		<a href="/cdn-cgi/l/email-protection#d7bdf9bab2f9a4a7b6a5a597b0bab6bebbf9b4b8ba" onclick="window.open('https://mail.google.com/mail/?view=cm&amp;tf=1&amp;to=j.me.sparr@gmail.com&amp;cc=&amp;bcc=&amp;su=&amp;body=','_blank');return false;"><i class="share-icon fa fa-comment"></i></a>
+   		 </div>
+
+    	<div class="col-4 center">
+      		<p>Built with <a href="http://www.sublimetext.com">Sublime Text</a></p>
+      		<p>Powered by <a href="https://pages.github.com">GitHub</a></p> 
+    	</div>
+  	</div>
+</div>
+
+
+</body>
+</html>
